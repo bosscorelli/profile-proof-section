@@ -1,0 +1,157 @@
+/*  */
+/* Reset */
+/*  */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+:root {
+    --Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+    --ff-league: 'League Spartan', sans-serif;
+}
+
+body {
+    font-family: var(--ff-league);
+    max-width: 375px;
+    background: url(./images/bg-pattern-top-mobile.svg) left top -10vh no-repeat, url(./images/bg-pattern-bottom-mobile.svg) left bottom -10vh no-repeat
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-weight: 700;
+    color: var(--Dark-Magenta);
+}
+
+.header-p {
+    text-align: center;
+    padding: 20px;
+    color: var(--Dark-Magenta);
+    font-weight: 500;
+}
+
+
+.review {
+    background-color: var(--Light-Grayish-Magenta);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 10px;
+}
+
+.rated {
+    color: var(--Dark-Magenta);
+    font-weight: 700;
+}
+
+.author {
+    background-color: var(--Dark-Magenta);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonial {
+    display: flex;
+    margin-top: 2rem;
+
+}
+
+.testimonial img {
+    border-radius: 50px;
+    max-width: 25%;
+    margin-right: 1rem;
+
+}
+
+.name {
+    color: var(--White);
+    font-weight: 700;
+}
+
+.verified {
+    color: var(--Soft-Pink);
+    font-weight: 500;
+}
+
+blockquote {
+    color: var(--Light-Grayish-Magenta);
+}
+
+@media (min-width:376px) and (max-width:1441px) {
+    body {
+        width: 1440px;
+        background-color: red;
+    }
+
+
+}
